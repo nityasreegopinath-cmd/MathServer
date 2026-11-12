@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>CALCULATOR</title>
+    </head>
+    <body>
+        <h1 align="center">CHURN RATE CALCULATION</h1>
+        <h2 align="center">G Nitya Sree (26012026)</h2>
+        <form method="POST">
+            {%csrf_token%}
+            <label>Initial Customer:<label>
+            <input type="number" value="{{initialCust}}" name="initial_customer"><br><br>
+            <label>Present Customer:</label>
+            <input type="number" value="{{PresentCust}}" name="present_customer"><br><br>
+            <input type="submit" value="Calculate"><br><br>
+            <label>Churn Rate:</label>
+            <input type="number" value="{{churn}}"><br><br>
+        </form>
+    </body>
+</html>
